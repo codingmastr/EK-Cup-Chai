@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Custom colors and styles */
+
+:root {
+    --chai-yellow: #f4c542;
+    --chai-brown: #3e2723;
+}
+
+/* Custom Utility Classes */
+.text-chaiYellow {
+    color: var(--chai-yellow);
+}
+.bg-chaiYellow {
+    background-color: var(--chai-yellow);
+}
+.text-chaiBrown {
+    color: var(--chai-brown);
+}
+.bg-chaiBrown {
+    background-color: var(--chai-brown);
+}
+.hover\:text-chaiBrown:hover {
+    color: var(--chai-brown);
+}
+.hover\:bg-chaiBrown:hover {
+    background-color: var(--chai-brown);
+}
+
+/* Logo Font */
+.logo-font {
+    font-family: 'Pacifico', cursive;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.animate-slideIn {
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
